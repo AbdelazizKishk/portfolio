@@ -1,0 +1,652 @@
+<section
+  id="home"
+  class="min-h-screen scroll-smooth scroll-mt-[60px] flex flex-col-reverse md:flex-row items-center justify-evenly gap-10 py-16 px-6 text-white text-center md:text-left"
+>
+  <div class="max-w-xl">
+    <h2 class="text-2xl font-medium mb-2">Hello, I'm</h2>
+    <h1 class="text-2xl md:text-5xl font-bold uppercase mb-3 text-red-700">
+      Abdelaziz Mohamed
+    </h1>
+    <h5 class="text-lg font-medium text-gray-300 mb-5">
+      Front End Developer | Angular
+    </h5>
+    <p class="mb-6 text-gray-200">
+      A passionate Junior Frontend Developer. After discovering a deep interest
+      in software development and technology, I constantly improved my technical
+      skills, aiming to contribute to innovative web solutions. I am eager to
+      contribute my frontend development skills and engineering background to
+      create impactful, user-centered web solutions.
+    </p>
+    <a
+      href="/Cv/Abdelaziz%20mohamed%20CV.pdf"
+      download="Abdelaziz Mohamed CV.pdf"
+      class="bg-white text-gray-900 px-6 py-2 rounded-md font-semibold hover:bg-red-700 hover:text-white transition"
+    >
+      Download CV
+    </a>
+  </div>
+
+  <img
+    src="/imgs/my.jpg"
+    alt="my photo"
+    class="w-52 h-52 md:w-80 md:h-80 object-cover rounded-full shadow-lg"
+  />
+</section>
+@if (showScrollTopBtn) {
+<button
+  (click)="scrollToTop()"
+  class="fixed cursor-pointer bottom-6 right-6 bg-red-700 text-white px-4 py-2 rounded-full z-50"
+>
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+}
+<section
+  id="about"
+  class="bg-white py-16 px-6 md:px-16 scroll-smooth scroll-mt-[60px]"
+>
+  <h2 class="text-4xl text-center font-bold mb-6 relative">
+    <span
+      class="text-gray-300 absolute -top-8 left-1/2 transform -translate-x-1/2 text-7xl font-extrabold tracking-wide opacity-20"
+    >
+      ABOUT
+    </span>
+    <span class="relative z-10 border-b-4 border-red-500 pb-1"> ABOUT ME </span>
+  </h2>
+
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    <div class="flex-shrink-0" data-aos="fade-right">
+      <img
+        src="/imgs/my.jpg"
+        alt="profile"
+        class="w-72 md:w-96 object-cover rounded-xl"
+      />
+    </div>
+
+    <div class="text-gray-800 max-w-2xl" data-aos="fade-left">
+      <div class="mb-6">
+        <h3 class="font-semibold mb-1 text-2xl">Summary</h3>
+        <p class="text-sm text-gray-600">
+          I'm abdelaziz mohamed, a Front-End developer passionate about UI
+          design. I love solving complex problems and expanding my skill set. I
+          strive to create high-quality, maintainable code that meets industry
+          standards, and I am always eager for new challenges to grow as a
+          developer. <br />
+          <br />
+          Although I have a bachelor's degree in civil engineering, my interest
+          in software development led me to pursue a tech career Especially
+          Front and developer. With experience in sales, marketing, and public
+          relations, I bring a diverse skill set to the table. My curiosity
+          drives me to constantly learn, improve, and seek out new challenges in
+          my professional journey.
+        </p>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold mb-1 text-2xl">Education & Courses</h3>
+        <div class="flex flex-wrap gap-2">
+          <span
+            class="bg-gray-100 text-sm px-3 py-1 rounded-md shadow border-2 border-red-700"
+            >Alexandria University</span
+          >
+          <span
+            class="bg-gray-100 text-sm px-3 py-1 rounded-md shadow border-2 border-red-700"
+            >Bachelor of Engineering</span
+          >
+          <span
+            class="bg-gray-100 text-sm px-3 py-1 rounded-md shadow border-2 border-red-700"
+            >Graduated 2023</span
+          >
+          <span
+            class="bg-gray-100 text-sm px-3 py-1 rounded-md shadow border-2 border-red-700"
+            >GPA B (84.5%)</span
+          >
+          <span
+            class="bg-gray-100 text-sm px-3 py-1 rounded-md shadow border-2 border-red-700"
+            >Route Academy</span
+          >
+          <span
+            class="bg-gray-100 text-sm px-3 py-1 rounded-md shadow border-2 border-red-700"
+            >Front End Developer</span
+          >
+          <span
+            class="bg-gray-100 text-sm px-3 py-1 rounded-md shadow border-2 border-red-700"
+            >Diploma Degree</span
+          >
+          <span
+            class="bg-gray-100 text-sm px-3 py-1 rounded-md shadow border-2 border-red-700"
+            >Graduated 2025</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section
+  id="skills"
+  class="bg-gradient-to-b from-gray-900 to-blue-900 py-16 px-6 md:px-16 scroll-smooth scroll-mt-[60px]"
+>
+  <h2 class="text-4xl text-center font-bold mb-6 relative">
+    <span
+      class="text-gray-500 absolute -top-8 left-1/2 transform -translate-x-1/2 text-7xl font-extrabold tracking-wide opacity-20"
+    >
+      SKILLS
+    </span>
+    <span class="relative z-10 border-b-4 border-red-500 pb-1 text-white"
+      >MY SKILLS
+    </span>
+  </h2>
+  <div
+    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
+  >
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img src="/imgs/icons/html5.svg" alt="html logo" class="w-24 h-16 mb-2" />
+      <p class="font-bold text-white">HTML</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img src="/imgs/icons/css3.svg" alt="css" class="w-16 h-16 mb-2" />
+      <p class="font-bold text-white">Css</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img
+        src="/imgs/icons/bootstrap.svg"
+        alt="bootstrap logo"
+        class="w-16 h-16 mb-2"
+      />
+      <p class="font-bold text-white">Bootstrap</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img
+        src="/imgs/icons/javascript.svg"
+        alt="JavaScript logo"
+        class="w-16 h-16 mb-2"
+      />
+      <p class="font-bold text-white">JavaScript</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img
+        src="/imgs/icons/typescript.svg"
+        alt="typescript logo"
+        class="w-16 h-16 mb-2"
+      />
+      <p class="font-bold text-white">TypeScript</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img
+        src="/imgs/icons/tailwindcss.svg"
+        alt="tailwind logo"
+        class="w-16 h-16 mb-2"
+      />
+      <p class="font-bold text-white">Tailwind</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img src="/imgs/icons/sass.svg" alt="sass logo" class="w-16 h-16 mb-2" />
+      <p class="font-bold text-white">Sass</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img
+        src="/imgs/icons/angular.svg"
+        alt="angular logo"
+        class="w-16 h-16 mb-2"
+      />
+      <p class="font-bold text-white">Angular</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img
+        src="/imgs/icons/vs-code.svg"
+        alt="vs code logo"
+        class="w-16 h-16 mb-2"
+      />
+      <p class="font-bold text-white">VsCode</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img src="/imgs/icons/git.svg" alt="git logo" class="w-16 h-16 mb-2" />
+      <p class="font-bold text-white">Git</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img
+        src="/imgs/icons/Notion.png"
+        alt="Notion logo"
+        class="w-16 h-16 mb-2"
+      />
+      <p class="font-bold text-white">Notion</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img src="/imgs/icons/npm.svg" alt="npm logo" class="w-16 h-16 mb-2" />
+      <p class="font-bold text-white">Npm</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="flex flex-col items-center bg-gradient-to-b from-bule-400 to-blue-600 rounded shadow p-2"
+    >
+      <img
+        src="/imgs/icons/postman.svg"
+        alt="postman logo"
+        class="w-16 h-16 mb-2"
+      />
+      <p class="font-bold text-white">Postman</p>
+    </div>
+  </div>
+</section>
+<section
+  id="projects"
+  class="py-16 px-6 md:px-16 scroll-smooth scroll-mt-[60px]"
+>
+  <h2 class="text-3xl text-center font-bold mb-6 relative">
+    <span
+      class="text-gray-500 absolute -top-8 left-1/2 transform -translate-x-1/2 text-5xl font-extrabold tracking-wide opacity-20"
+    >
+      PROJECTS
+    </span>
+    <span class="relative z-10 border-b-4 border-red-500 pb-1 text-black"
+      >MY PROJECTS
+    </span>
+  </h2>
+  <div
+    data-aos="fade-right"
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto"
+  >
+    <div
+      class="rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+    >
+      <img
+        src="/projects/p6.png"
+        alt="E-commerce App Angular"
+        class="w-full h-48 object-cover"
+      />
+      <div class="p-4 text-white bg-gray-900">
+        <h5 class="text-xl text-red-700 font-bold mb-2">E-commerce App</h5>
+        <p class="mb-4">
+          SwiftCart is a user-friendly shopping platform designed to provide a
+          seamless and efficient online shopping experience.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="https://e-commerce-swift-cart.vercel.app/"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Demo
+          </a>
+          <a
+            href="https://github.com/AbdelazizKishk/E-commerce"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Repo
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+    >
+      <img
+        src="/projects/p8.png"
+        alt="MovieZone App Angular"
+        class="w-full h-48 object-cover"
+      />
+      <div class="p-4 text-white">
+        <h5 class="text-xl text-red-700 font-bold mb-2">MovieZone App</h5>
+        <p class="mb-4">
+          A responsive and modern Angular application to display trending
+          movies, popular TV shows, and detailed information for each title.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="https://the-moviezone.vercel.app/"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Demo
+          </a>
+          <a
+            href="https://github.com/AbdelazizKishk/MovieZone"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Repo
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+    >
+      <img
+        src="/projects/p7.png"
+        alt="Notes App Angular"
+        class="w-full h-48 object-cover"
+      />
+      <div class="p-4 text-white">
+        <h5 class="text-xl text-red-700 font-bold mb-2">Notes App</h5>
+        <p class="mb-4">
+          The Notes App is a web-based application built using Angular that
+          allows users to create, update, and delete notes efficiently.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="https://note-app-pi-two.vercel.app/"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Demo
+          </a>
+          <a
+            href="https://github.com/AbdelazizKishk/Note-App"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Repo
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+    >
+      <img
+        src="/projects/p1.png"
+        alt="Simple Design Angular"
+        class="w-full h-48 object-cover"
+      />
+      <div class="p-4 text-white">
+        <h5 class="text-xl text-red-700 font-bold mb-2">
+          Simple Design Angular
+        </h5>
+        <p class="mb-4">Simple Angular Design for routing and SPA</p>
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="https://first-app-angular-black.vercel.app/"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Demo
+          </a>
+          <a
+            href="https://github.com/AbdelazizKishk/First-App-Angular"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Repo
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+    >
+      <img
+        src="/projects/p2.png"
+        alt="Bookmarker"
+        class="w-full h-48 object-cover"
+      />
+      <div class="p-4 text-white">
+        <h5 class="text-xl text-red-700 font-bold mb-2">Bookmarker</h5>
+        <p class="mb-4">CRUD Saving links For Websites in local storage</p>
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="https://abdelazizkishk.github.io/Bookmark-your-favorite-sites/"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Demo
+          </a>
+          <a
+            href="https://github.com/AbdelazizKishk/Bookmark-your-favorite-sites"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Repo
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+    >
+      <img
+        src="/projects/p3.png"
+        alt="Login Page"
+        class="w-full h-48 object-cover"
+      />
+      <div class="p-4 text-white">
+        <h5 class="text-xl text-red-700 font-bold mb-2">Login Page</h5>
+        <p class="mb-4">Login and Signup page using Regular Expression</p>
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="https://abdelazizkishk.github.io/Login-System/"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Demo
+          </a>
+          <a
+            href="https://github.com/AbdelazizKishk/Login-System"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Repo
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+    >
+      <img
+        src="/projects/p4.png"
+        alt="DANIELS"
+        class="w-full h-48 object-cover"
+      />
+      <div class="p-4 text-white">
+        <h5 class="text-xl text-red-700 font-bold mb-2">Daniels</h5>
+        <p class="mb-4">Portfolio Landing page with main Animation</p>
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="https://abdelazizkishk.github.io/Daniels/"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Demo
+          </a>
+          <a
+            href="https://github.com/AbdelazizKishk/Daniels"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Repo
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+    >
+      <img
+        src="/projects/p5.png"
+        alt="DevFolio"
+        class="w-full h-48 object-cover"
+      />
+      <div class="p-4 text-white">
+        <h5 class="text-xl text-red-700 font-bold mb-2">DevFolio</h5>
+        <p class="mb-4">Portfolio Landing page with main UI Tools</p>
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="https://abdelazizkishk.github.io/Abdelaziz/"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Demo
+          </a>
+          <a
+            href="https://github.com/AbdelazizKishk/Abdelaziz"
+            target="_blank"
+            class="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-900 transition"
+          >
+            View Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section
+  id="contact"
+  class="bg-white py-16 px-6 md:px-20 scroll-smooth scroll-mt-[60px]"
+>
+  <h2 class="text-4xl text-center font-bold mb-6 relative">
+    <span
+      class="text-gray-500 absolute -top-8 left-1/2 transform -translate-x-1/2 text-5xl font-extrabold tracking-wide opacity-20"
+    >
+      CONTACT
+    </span>
+    <span class="relative z-10 border-b-4 border-red-500 pb-1 text-white"
+      >Contact Me
+    </span>
+  </h2>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start max-w-7xl mx-auto"
+  >
+    <div>
+      <h2 class="text-2xl text-white font-bold mb-2">Send Message Us</h2>
+      <div class="w-20 h-1 bg-blue-500 mb-6"></div>
+
+      <form class="space-y-4">
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <input
+          type="text"
+          placeholder="Subject"
+          class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <textarea
+          rows="4"
+          placeholder="Message"
+          class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-full transition"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+    <div>
+      <h2 class="text-2xl text-white font-bold mb-2">Get in Touch</h2>
+      <div class="w-20 h-1 bg-blue-500 mb-6"></div>
+
+      <p class="text-white mb-6">
+        I'm always open to discussing new projects, creative ideas, or
+        opportunities to be part of your vision. Feel free to reach out — I'd
+        love to hear from you! <br />
+        Have a question, project idea, or just want to say hi? Reach out and
+        I’ll get back to you as soon as possible. Let’s build something great
+        together!
+      </p>
+
+      <ul class="text-gray-700 space-y-3 mb-6">
+        <li class="flex items-center text-white gap-2">
+          <svg
+            class="w-5 h-5 text-blue-600"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M21 10.5c0 7.5-9 13.5-9 13.5s-9-6-9-13.5a9 9 0 1118 0z" />
+          </svg>
+          Egypt,cairo
+        </li>
+        <li class="flex items-center text-white gap-2">
+          <svg
+            class="w-5 h-5 text-blue-600"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1.1 1.1 0 011.1-.3 11.5 11.5 0 003.6.6 1.1 1.1 0 011.1 1.1v3.3a1.1 1.1 0 01-1.1 1.1 18.4 18.4 0 01-17.4-17.4 1.1 1.1 0 011.1-1.1h3.3a1.1 1.1 0 011.1 1.1 11.5 11.5 0 00.6 3.6 1.1 1.1 0 01-.3 1.1L6.6 10.8z"
+            />
+          </svg>
+          +201061037276
+        </li>
+        <li class="flex items-center text-white gap-2">
+          <svg
+            class="w-5 h-5 text-blue-600"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 4H4a2 2 0 00-2 2v1.3l10 6.2 10-6.2V6a2 2 0 00-2-2zM2 8.3v9.7a2 2 0 002 2h16a2 2 0 002-2V8.3l-10 6.2L2 8.3z"
+            />
+          </svg>
+          abdelazizkishk19{{ "@" }}gmail.com
+        </li>
+      </ul>
+
+      <!-- Social Icons -->
+      <div class="flex gap-4 text-blue-600">
+        <a
+          href="https://github.com/AbdelazizKishk"
+          target="_blank"
+          class="hover:text-blue-800 text-2xl"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/abd-elaziz-mohamed258/"
+          target="_blank"
+          class="hover:text-blue-800 text-2xl"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a
+          href="https://wa.me/201061037276"
+          target="_blank"
+          class="hover:text-blue-800 text-2xl"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</section>
