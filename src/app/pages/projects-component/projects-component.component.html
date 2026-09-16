@@ -1,0 +1,30 @@
+<section
+  id="projects"
+  class="scroll-mt-[60px] bg-white dark:bg-gray-950 px-6 py-16 md:px-16"
+>
+  <!-- Section Title -->
+  <h2 class="relative mb-10 text-center text-3xl font-bold">
+    <span
+      class="absolute left-1/2 -top-8 -translate-x-1/2 text-5xl font-extrabold tracking-wide text-gray-400 dark:text-gray-600 opacity-20"
+      aria-hidden="true"
+    >
+      PROJECTS
+    </span>
+
+    <span
+      class="relative z-10 border-b-4 border-red-500 pb-1 text-gray-900 dark:text-white"
+    >
+      MY PROJECTS
+    </span>
+  </h2>
+
+  <!-- Projects -->
+  <div
+    data-aos="fade-right"
+    class="mx-auto grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+  >
+    @for (project of projects; track project.id) {
+      <app-project-card [project]="project" />
+    }
+  </div>
+</section>

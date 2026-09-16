@@ -1,0 +1,29 @@
+<section
+  id="skills"
+  class="scroll-mt-[60px] bg-gray-50 dark:bg-gray-950 px-6 py-16 md:px-16"
+>
+  <!-- Section Title -->
+  <h2 class="relative mb-12 text-center text-3xl font-bold">
+    <span
+      class="absolute left-1/2 -top-8 -translate-x-1/2 text-5xl font-extrabold tracking-wide text-gray-400 dark:text-gray-600 opacity-20"
+      aria-hidden="true"
+    >
+      SKILLS
+    </span>
+
+    <span
+      class="relative z-10 border-b-4 border-red-500 pb-1 text-gray-900 dark:text-white"
+    >
+      MY SKILLS
+    </span>
+  </h2>
+
+  <!-- Skills -->
+  <div
+    class="mx-auto grid max-w-6xl grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+  >
+    @for (skill of skills; track skill.id) {
+      <app-skill-card data-aos="fade-up" [skill]="skill" />
+    }
+  </div>
+</section>

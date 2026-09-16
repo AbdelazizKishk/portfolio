@@ -1,0 +1,23 @@
+<div
+  class="group flex h-full min-h-[150px] flex-col items-center justify-center rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-red-500 hover:shadow-xl"
+>
+  <!-- Icon -->
+  <div
+    class="mb-4 flex h-20 w-20 items-center justify-center rounded-2xl bg-gray-100 dark:bg-gray-800 transition-all duration-300 group-hover:scale-110 group-hover:bg-red-50 dark:group-hover:bg-red-500/10"
+  >
+    <img
+      [ngSrc]="skill().icon"
+      [alt]="skill().name + ' logo'"
+      width="56"
+      height="56"
+      class="h-14 w-14 object-contain"
+    />
+  </div>
+
+  <!-- Name -->
+  <p
+    class="text-center font-semibold text-gray-800 dark:text-gray-200 transition-colors group-hover:text-red-600 dark:group-hover:text-red-400"
+  >
+    {{ skill().name }}
+  </p>
+</div>

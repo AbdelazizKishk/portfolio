@@ -9,10 +9,21 @@ import {
   Renderer2,
 } from '@angular/core';
 import * as AOS from 'aos';
+import { AboutComponentComponent } from '../about-component/about-component.component';
+import { SkillsComponentComponent } from '../skills-component/skills-component.component';
+import { ProjectsComponentComponent } from '../projects-component/projects-component.component';
+import { ContactComponentComponent } from '../contact-component/contact-component.component';
+import { MainIntroComponentComponent } from '../main-intro-component/main-intro-component.component';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [
+    AboutComponentComponent,
+    SkillsComponentComponent,
+    ProjectsComponentComponent,
+    ContactComponentComponent,
+    MainIntroComponentComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
@@ -49,14 +60,4 @@ export class HomeComponent implements OnInit, AfterViewInit {
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  /* downloadCV() {
-    const link = document.createElement('a');
-    link.href = '/Cv/Abdelaziz%20mohamed%20CV.pdf'; // استبدلنا المسافات بـ %20
-    link.download = 'Abdelaziz Mohamed CV.pdf';
-    link.target = '_blank'; // علشان يفتح في تاب جديدة لو المتصفح محتاج كده
-    link.rel = 'noopener'; // أمان إضافي، يمنع صفحة الملف من التحكم في موقعك
-    document.body.appendChild(link); // بنضيف الرابط مؤقتًا في الصفحة
-    link.click(); // بننفذ الضغط على الرابط
-    document.body.removeChild(link); // بنشيله من الصفحة بعد ما نخلص
-  } */
 }

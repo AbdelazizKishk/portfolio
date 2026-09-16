@@ -1,0 +1,177 @@
+<section
+  id="home"
+  class="relative min-h-[100dvh] scroll-mt-[60px] overflow-hidden bg-white px-6 pb-20 pt-28 dark:bg-gray-950 md:px-16"
+>
+  <!-- Background -->
+  <div
+    class="pointer-events-none absolute inset-0 bg-[url('/bg/endless-constellation.svg')] bg-cover bg-center opacity-[0.04] dark:opacity-[0.08]"
+  ></div>
+
+  <!-- Red glow -->
+  <div
+    class="pointer-events-none absolute -left-16 top-1/4 h-72 w-72 rounded-full bg-red-500/10 blur-3xl dark:bg-red-500/10"
+  ></div>
+
+  <div
+    class="pointer-events-none absolute -right-16 bottom-10 h-72 w-72 rounded-full bg-red-500/10 blur-3xl dark:bg-red-500/10"
+  ></div>
+
+  <!-- Content -->
+  <div
+    class="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 md:grid-cols-2 md:gap-10"
+  >
+    <!-- Text -->
+    <div
+      data-aos="fade-right"
+      class="order-2 text-center md:order-1 md:text-left"
+    >
+      <!-- Small intro -->
+      <p
+        class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-red-600 dark:text-red-400"
+      >
+        Welcome to my portfolio
+      </p>
+
+      <!-- Hello -->
+      <h2
+        class="mb-2 text-xl font-medium text-gray-600 dark:text-gray-300 md:text-2xl"
+      >
+        Hello, I'm
+      </h2>
+
+      <!-- Name -->
+      <h1
+        class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl lg:text-6xl"
+      >
+        Abdelaziz
+        <span class="text-red-600 dark:text-red-500"> Mohamed </span>
+      </h1>
+
+      <!-- Role -->
+      <div
+        class="mb-6 flex items-center justify-center gap-2 text-lg font-semibold text-gray-700 dark:text-gray-200 md:justify-start"
+      >
+        <span class="h-2 w-2 rounded-full bg-red-500"></span>
+
+        <span> Frontend Developer </span>
+
+        <span class="text-gray-400">·</span>
+
+        <span class="text-red-600 dark:text-red-400"> Angular </span>
+      </div>
+
+      <!-- Description -->
+      <p
+        class="mx-auto mb-8 max-w-xl text-base leading-7 text-gray-600 dark:text-gray-400 md:mx-0"
+      >
+        I'm a passionate Frontend Developer focused on building clean,
+        responsive, and user-friendly web applications using Angular,
+        TypeScript, and modern UI technologies like Tailwind CSS.
+      </p>
+
+      <!-- Actions -->
+      <div
+        class="mb-8 flex flex-col items-center gap-3 sm:flex-row md:items-start"
+      >
+        <!-- Projects -->
+        <a
+          href="#projects"
+          class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-red-600 px-6 py-3 font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-red-700 hover:shadow-lg sm:w-auto"
+        >
+          <i class="fa-solid fa-code"></i>
+          View Projects
+        </a>
+
+        <!-- CV -->
+        <a
+          href="/Cv/Abdelaziz-mohamed-Frontend-Angular-CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white px-6 py-3 font-semibold text-gray-800 transition-all duration-300 hover:-translate-y-1 hover:border-red-500 hover:text-red-600 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200 dark:hover:border-red-500 dark:hover:text-red-400 sm:w-auto"
+        >
+          <i class="fa-solid fa-file-arrow-down"></i>
+          Download CV
+        </a>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex items-center justify-center gap-5 md:justify-start">
+        <a
+          href="https://github.com/AbdelazizKishk"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          class="text-xl text-gray-500 transition-colors hover:text-red-600 dark:text-gray-400 dark:hover:text-red-400"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/abd-elaziz-mohamed258/"
+          aria-label="LinkedIn"
+          target="_blank"
+          class="text-xl text-gray-500 transition-colors hover:text-red-600 dark:text-gray-400 dark:hover:text-red-400"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=abdelazizkishk19@gmail.com"
+          aria-label="Email"
+          target="_blank"
+          class="text-xl text-gray-500 transition-colors hover:text-red-600 dark:text-gray-400 dark:hover:text-red-400"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div data-aos="fade-left" class="order-1 flex justify-center md:order-2">
+      <div class="relative">
+        <!-- Outer glow -->
+        <div
+          class="absolute inset-0 scale-105 rounded-full bg-red-500/20 blur-2xl"
+        ></div>
+
+        <!-- Decorative ring -->
+        <div
+          class="absolute -inset-3 rounded-full border border-red-500/20"
+        ></div>
+
+        <!-- Image container -->
+        <div
+          class="relative rounded-full border-8 border-white bg-gray-100 p-2 shadow-2xl dark:border-gray-900 dark:bg-gray-800"
+        >
+          <img
+            ngSrc="/imgs/my.jpg"
+            alt="Abdelaziz Mohamed, Frontend Developer"
+            width="400"
+            height="400"
+            priority
+            class="h-64 w-64 rounded-full object-cover sm:h-72 sm:w-72 md:h-80 md:w-80"
+          />
+        </div>
+
+        <!-- Angular badge -->
+        <div
+          class="absolute -bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-800 shadow-lg dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200"
+        >
+          <i class="fa-brands fa-angular text-red-600 dark:text-red-500"></i>
+          Angular Developer
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <a
+    href="#about"
+    aria-label="Scroll to About section"
+    class="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-gray-400 transition-colors hover:text-red-500 md:flex"
+  >
+    <span class="text-xs font-medium uppercase tracking-widest"> Scroll </span>
+
+    <i class="fa-solid fa-chevron-down animate-bounce"></i>
+  </a>
+</section>

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { ThemeServiceService } from '../../core/services/theme-service.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +8,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
-  isMenuOpen!: boolean;
+  themeServiceService = inject(ThemeServiceService);
+
+  isMenuOpen = false;
+
   closeMenuAfterNavigate() {
     setTimeout(() => {
       this.isMenuOpen = false;

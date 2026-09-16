@@ -1,29 +1,99 @@
 <footer
-  class="bg-gradient-to-r from-gray-800 to-blue-900 text-white py-6 scroll-smooth scroll-mt-[60px]"
+  class="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-gray-900 dark:text-white transition-colors duration-300"
 >
-  <div class="max-w-4xl mx-auto text-center px-4">
-    <!-- Logo or Name -->
-    <h2 class="text-2xl font-bold mb-2">Abdelaziz Mohamed</h2>
-    <p class="text-gray-400 mb-2">
-      Front-end Developer | Angular & Tailwind Enthusiast
-    </p>
-    <div class="flex justify-center gap-6 mb-2">
-      <a href="#home" class="text-gray-400 hover:text-white transition">Home</a>
-      <a href="#about" class="text-gray-400 hover:text-white transition"
-        >About</a
-      >
-      <a href="#skills" class="text-gray-400 hover:text-white transition"
-        >Skills</a
-      >
-      <a href="#projects" class="text-gray-400 hover:text-white transition"
-        >Projects</a
-      >
-      <a href="#contact" class="text-gray-400 hover:text-white transition"
-        >Contact</a
-      >
+  <div class="max-w-6xl mx-auto px-6 py-10">
+    <!-- Top -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <!-- Name / Description -->
+      <div class="text-center md:text-left">
+        <h2 class="text-2xl font-bold">Abdelaziz Mohamed</h2>
+
+        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+          Frontend Developer · Angular
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="flex flex-wrap justify-center gap-5 text-sm">
+        <a
+          href="#home"
+          class="text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500 transition"
+        >
+          Home
+        </a>
+
+        <a
+          href="#about"
+          class="text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500 transition"
+        >
+          About
+        </a>
+
+        <a
+          href="#skills"
+          class="text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500 transition"
+        >
+          Skills
+        </a>
+
+        <a
+          href="#projects"
+          class="text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500 transition"
+        >
+          Projects
+        </a>
+
+        <a
+          href="#contact"
+          class="text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500 transition"
+        >
+          Contact
+        </a>
+      </nav>
+
+      <!-- Social Icons -->
+      <div class="flex items-center gap-4">
+        <a
+          href="https://github.com/AbdelazizKishk"
+          aria-label="GitHub"
+          class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-red-600 hover:text-white transition"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/abd-elaziz-mohamed258/"
+          aria-label="LinkedIn"
+          class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-red-600 hover:text-white transition"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=abdelazizkishk19@gmail.com"
+          aria-label="Email"
+          class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-red-600 hover:text-white transition"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
     </div>
-    <p class="text-xs text-gray-500">
-      © 2025 Abdelaziz Mohamed. All rights reserved.
-    </p>
+
+    <!-- Divider -->
+    <div class="my-8 h-px bg-gray-200 dark:bg-gray-800"></div>
+
+    <!-- Bottom -->
+    <div
+      class="flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-gray-500 dark:text-gray-500"
+    >
+      <p>© {{ year }} Abdelaziz Mohamed. All rights reserved.</p>
+
+      <p>
+        Built with
+        <span class="text-red-600 dark:text-red-500">Angular</span>
+        &
+        <span class="text-red-600 dark:text-red-500">Tailwind CSS</span>
+      </p>
+    </div>
   </div>
 </footer>
